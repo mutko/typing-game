@@ -9,141 +9,164 @@
 </head>
 <body>
     
-    <div class="container">
+    <!-- Wrap for center -->
+    <div class="wrapper">
 
-        <!-- Choose level buttons -->
-        <div class="levels">
-            <button class="btn btn__easy">Easy</button>
-            <button class="btn btn__normal">Normal</button>
-            <button class="btn btn__hard">Hard</button>
-        </div><!-- End level buttons -->
+        <!-- Grid Container -->
+        <div class="container">
 
-        <!-- Score -->
-        <div class="score">
-            <!-- Score Hit -->
-            <span class="score__hit">Hit: 
-                <span class="score__hit_number">2</span>
-            </span>
-            <!-- Score Miss -->
-            <span class="score__miss">Miss:
-                <span class="score__mis_number">3</span>
-            </span>
-            <!-- Score Left -->
-            <span class="score__left">Left: 
-                <span class="score__left_number">21</span>
-            </span>
-        </div><!-- End Score -->
+            <!-- Choose level buttons -->
+            <div class="levels">
+                <p>Level</p>
+                <div class="levels__easy">
+                    <input type="radio" name="level" id="easy" value="Easy">
+                    <span class="radio-circle"></span>
+                    <label for="easy" class="radio radio__easy">Easy</label>
+                </div>
+                
+                <div class="levels__normal">
+                    <input type="radio" name="level" id="normal" value="Normal">
+                    <span class="radio-circle"></span>
+                    <label for="normal" class="radio radio__normal">Normal</label>
+                </div>
 
-        <!-- Start game button -->
-        <div class="start">
-            <button class="btn btn__start">Start game</button>
-        </div><!-- End Start game button -->
+                <div class="levels__hard">
+                    <input type="radio" name="level" id="hard" value="Hard">
+                    <span class="radio-circle"></span>
+                    <label for="hard" class="radio radio__hard">Hard</label>
+                </div>
+            </div><!-- End level buttons -->
 
-        <!-- Number monitor -->
-        <div class="monitor">
-            <span class="monitor__number">10</span>
-        </div><!-- End number monitor -->
+            <!-- Center Game Data -->
+            <div class="start-and-input">
+                <!-- Start game button -->
+                <div class="start">
+                    <button class="btn btn__start">Start game</button>
+                </div><!-- End Start game button -->
 
-        <!-- Letter input -->
-        <div class="input">
-            <span class="input__leter">Input letter</span>
-        </div><!-- End Letter input -->
-        
-        <!-- Keyboard layout -->
-        <div class="keyboard-layout">
-            <!-- Keyboard row 1 -->
-            <div class="row row__1">
-                <span class="key">Q 
-                    <span class="number">[17]</span>
-                </span>
-                <span class="key">W
-                    <span class="number">[23]</span>
-                </span>
-                <span class="key">E
-                    <span class="number">[5]</span>
-                </span>
-                <span class="key">R
-                    <span class="number">[18]</span>
-                </span>
-                <span class="key">T
-                    <span class="number">[20]</span>
-                </span>
-                <span class="key">Y
-                    <span class="number">[25]</span>
-                </span>
-                <span class="key">U
-                    <span class="number">[21]</span>
-                </span>
-                <span class="key">I
-                    <span class="number">[9]</span>
-                </span>
-                <span class="key">O
-                    <span class="number">[15]</span>
-                </span>
-                <span class="key">P
-                    <span class="number">[16]</span>
-                </span>
-            </div><!-- END Row 1 -->
+                <!-- Number monitor -->
+                <div class="monitor">
+                    <span class="monitor__number">10</span>
+                </div><!-- End number monitor -->
 
-            <!-- Keyboard row 2 -->
-            <div class="row row__2">
-                <span class="key">A
-                    <span class="number">[1]</span>
-                </span>
-                <span class="key">S
-                    <span class="number">[19]</span>
-                </span>
-                <span class="key">D
-                    <span class="number">[4]</span>
-                </span>
-                <span class="key">F
-                    <span class="number">[6]</span>
-                </span>
-                <span class="key">G
-                    <span class="number">[7]</span>
-                </span>
-                <span class="key">H
-                    <span class="number">[8]</span>
-                </span>
-                <span class="key">J
-                    <span class="number">[10]</span>
-                </span>
-                <span class="key">K
-                    <span class="number">[11]</span>
-                </span>
-                <span class="key">L
-                    <span class="number">[12]</span>
-                </span>
-            </div><!-- END Row 2 -->
+                <!-- Letter input -->
+                <div class="input">
+                    <input type="text" class="input-letter" id="input" placeholder="Input letter">
+                </div><!-- End Letter input  -->
+            </div><!-- End Center Game Data -->
+            
+            <!-- Score -->
+            <div class="scores">
+                <p>Score</p>
+                <!-- Score Hit -->
+                <div class="score score__hit">Hit: 
+                    <span class="score__hit_number">2</span>
+                </div>
+                <!-- Score Miss -->
+                <div class="score score__miss">Miss:
+                    <span class="score__mis_number">3</span>
+                </div>
+                <!-- Score Left -->
+                <div class="score score__left">Left: 
+                    <span class="score__left_number">21</span>
+                </div>
+            </div><!-- End Scores -->
 
-            <!-- Keyboard row 3 -->
-            <div class="row row__3">
-                <span class="key">Z
-                    <span class="number">[26]</span>
-                </span>
-                <span class="key">X
-                    <span class="number">[24]</span>
-                </span>
-                <span class="key">C
-                    <span class="number">[3]</span>
-                </span>
-                <span class="key">V
-                    <span class="number">[22]</span>
-                </span>
-                <span class="key">B
-                    <span class="number">[2]</span>
-                </span>
-                <span class="key">N
-                    <span class="number">[14]</span>
-                </span>
-                <span class="key">M
-                    <span class="number">[13]</span>
-                </span>
-            </div><!-- END Row 3 -->
-        </div><!-- END Keyboard Layout -->
+            <!-- Keyboard layout -->
+            <div class="keyboard-layout">
+                <!-- Keyboard row 1 -->
+                <div class="row row__1">
+                    <span class="key">
+                        <span class="number">17</span><br>Q
+                    </span>
+                    <span class="key">
+                        <span class="number">23</span><br>W
+                    </span>
+                    <span class="key">
+                        <span class="number">5</span><br>E
+                    </span>
+                    <span class="key">
+                        <span class="number">18</span><br>R
+                    </span>
+                    <span class="key">
+                        <span class="number">20</span><br>T
+                    </span>
+                    <span class="key">
+                        <span class="number">25</span><br>Y
+                    </span>
+                    <span class="key">
+                        <span class="number">21</span><br>U
+                    </span>
+                    <span class="key">
+                        <span class="number">9</span><br>I
+                    </span>
+                    <span class="key">
+                        <span class="number">15</span><br>O
+                    </span>
+                    <span class="key">
+                        <span class="number">16</span><br>P
+                    </span>
+                </div><!-- END Row 1 -->
 
+                <!-- Keyboard row 2 -->
+                <div class="row row__2">
+                    <span class="key">
+                        <span class="number">1</span><br>A
+                    </span>
+                    <span class="key">
+                        <span class="number">19</span><br>S
+                    </span>
+                    <span class="key">
+                        <span class="number">4</span><br>D
+                    </span>
+                    <span class="key">
+                        <span class="number">6</span><br>F
+                    </span>
+                    <span class="key">
+                        <span class="number">7</span><br>G
+                    </span>
+                    <span class="key">
+                        <span class="number">8</span><br>H
+                    </span>
+                    <span class="key">
+                        <span class="number">10</span><br>J
+                    </span>
+                    <span class="key">
+                        <span class="number">11</span><br>K
+                    </span>
+                    <span class="key">
+                        <span class="number">12</span><br>L
+                    </span>
+                </div><!-- END Row 2 -->
 
-    </div><!-- END Container -->
+                <!-- Keyboard row 3 -->
+                <div class="row row__3">
+                    <span class="key">
+                        <span class="number">26</span><br>Z
+                    </span>
+                    <span class="key">
+                        <span class="number">24</span><br>X
+                    </span>
+                    <span class="key">
+                        <span class="number">3</span><br>C
+                    </span>
+                    <span class="key">
+                        <span class="number">22</span><br>V
+                    </span>
+                    <span class="key">
+                        <span class="number">2</span><br>B
+                    </span>
+                    <span class="key">
+                        <span class="number">14</span><br>N
+                    </span>
+                    <span class="key">
+                        <span class="number">13</span><br>M
+                    </span>
+                </div><!-- END Row 3 -->
+            </div><!-- END Keyboard Layout -->
+
+        </div><!-- END Container -->
+    </div><!-- END Wrapper -->
 
     <script src="main.js"></script>
 </body>

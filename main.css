@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    --bg: #144140;
+    --font: #fff;
+    --border: #3c8f9d;
+    --success: #1629ff;
+    --miss: #ff0000;
+    --radius: 8px;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    color: var(--font);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+    width: 760px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "levels center score"
+        "keyboard keyboard keyboard";
+    justify-items: center;
+}
+
+.levels {
+    grid-area: levels;
+    text-align: left;
+    align-self: center;
+}
+.levels__normal {
+    padding: 10px 0;
+}
+
+.start-and-input {
+    grid-area: center;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: var(--success);
+    border: none;
+    border-radius: var(--radius);
+    color: var(--font);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.monitor {
+    font-size: 4em;
+    padding: 30px 0;
+}
+.input-letter {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 15px 0 15px 10px;
+    color: var(--font);
+    font-size: 1.8em;
+    text-align: center;
+}
+.input-letter:focus {
+    outline: none;
+}
+.input-letter::placeholder {
+    color: rgba(255, 255, 255, .8);
+    font-size: .8em;
+}
+
+
+.scores {
+    grid-area: score;
+    align-self: center;
+    text-align: right;
+}
+.score__hit {
+    color: var(--success);
+}
+.score__miss {
+    color: var(--miss);
+    padding: 10px 0;
+}
+
+.keyboard-layout {
+    grid-area: keyboard;
+    margin-top: 60px;
+}
+.key {
+    display: inline-block;
+    width: 60px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1.2em;
+    font-weight: 100;
+    color: var(--border);
+    cursor: pointer;
+}
+.number {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    color: var(--font);
+}
