@@ -6,7 +6,7 @@ html {
     --bg: #144140;
     --font: #fff;
     --border: #3c8f9d;
-    --success: #1629ff;
+    --success: #4BB543;
     --miss: #ff0000;
     --radius: 8px;
 
@@ -31,6 +31,9 @@ body {
     right: 0;
     transform: translateY(-50%);
 }
+
+
+
 .container {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
@@ -114,7 +117,6 @@ body {
     border-radius: var(--radius);
     font-size: 1.2em;
     font-weight: 100;
-    color: var(--border);
     cursor: pointer;
 }
 .number {
@@ -122,4 +124,14 @@ body {
     font-size: 1.5em;
     padding-bottom: 5px;
     color: var(--font);
+}
+
+
+.succ {
+    background-color: var(--success);
+    border-color: var(--success);
+}
+.miss {
+    background-color: var(--miss);
+    border-color: var(--miss);
 }
